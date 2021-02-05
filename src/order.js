@@ -14,6 +14,7 @@ function refundOrder(num, array) {
   }
 }
 
+// Lists menu items by its name 
 function listItems(order) {
   var itemList = "";
 
