@@ -14,11 +14,9 @@ function refundOrder(num, array) {
   }
 }
 
-
 function listItems(order) {
   var itemList = "";
 
-  // itemList += order[i].item;
   for (var i = 0; i < order.length; i++) {
     if (i < 0) {
       itemList += `, ${order[i].item}` 
