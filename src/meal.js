@@ -18,9 +18,16 @@ function createMenuItem(name, price, type) {
 } 
 
 // Adds only unique ingredient to array 
-function addIngredients(ingredient, array) {
-  if (array.includes(ingredient) === false) {
-    array.push(ingredient);
+function addIngredients(newIngredient, ingredients) { 
+  var exisist = false; 
+
+  for (var i = 0; i < ingredients.length; i++) {
+    if (newIngredient === ingredients[i]) {
+      exisist = true;
+    }
+  }  
+  if (!exisist) {
+    ingredients.push(newIngredient)
   }
 }
 
