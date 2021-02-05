@@ -2,8 +2,8 @@ class Chef {
   constructor(name, restaurant) {
     this.name = name;
     this.restaurant = restaurant;
-    // this.isMorning = false;
   }
+
   greetCustomer(name, isMorning) {
     if (isMorning) {
       return `Good morning, ${name}!`;
@@ -11,6 +11,7 @@ class Chef {
       return `Hello, ${name}!`;
     }
   }
+  
   checkForFood(foodItem) {
     var type = foodItem.type;
     var itemName = foodItem.name;
@@ -23,7 +24,7 @@ class Chef {
         return false;
       }
     }
-    
+
     if (confirm) {
       return `Yes, we're serving ${itemName} today!`
     } else {
