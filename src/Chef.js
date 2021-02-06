@@ -11,7 +11,7 @@ class Chef {
       return `Hello, ${name}!`;
     }
   }
-  
+
   checkForFood(foodItem) {
     var type = foodItem.type;
     var itemName = foodItem.name;
@@ -20,9 +20,7 @@ class Chef {
     for (var i = 0; i < this.restaurant.menus[type].length; i++) {
       if (itemName === this.restaurant.menus[type][i].name) {
         confirm = true;
-      } else {
-        return false;
-      }
+      } 
     }
 
     if (confirm) {
