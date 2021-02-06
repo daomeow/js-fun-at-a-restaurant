@@ -9,20 +9,21 @@ function takeOrder(order, array) {
 function refundOrder(num, array) {
   for (var i = 0; i < array.length; i++) {
     if (num === array[i].orderNumber) {
-      array.splice(i, 1)
+      array.splice(i, 1);
     }
   }
 }
 
-// Lists menu items by its name 
+// Lists menu items by name
 function listItems(order) {
   var itemList = "";
 
   for (var i = 0; i < order.length; i++) {
-    if (i < 0) {
-      itemList += `, ${order[i].item}` 
+
+    if (i >= 1) {
+      itemList += `, ${order[i].item}`;
     } else {
-      itemList += order[i].list
+      itemList += order[i].item;
     }
   }
   return itemList;

@@ -24,9 +24,9 @@ class Chef {
     }
 
     if (confirm) {
-      return `Yes, we're serving ${itemName} today!`
+      return `Yes, we're serving ${itemName} today!`;
     } else {
-      return `Sorry, we aren't serving ${itemName} today.`
+      return `Sorry, we aren't serving ${itemName} today.`;
     }
   }
 }

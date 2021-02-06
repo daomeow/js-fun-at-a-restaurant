@@ -15,7 +15,7 @@ function addMenuItem(restaurant, foodInfo) {
   var type = foodInfo.type;
   
   if (restaurant.menus[type] && !restaurant.menus[type].includes(foodInfo)) {
-    restaurant.menus[type].push(foodInfo)
+    restaurant.menus[type].push(foodInfo);
   }
 }
 
@@ -33,7 +33,7 @@ function removeMenuItem(restaurant, food, type) {
     restaurant.menus[type].splice(foodIndex, 1);
     return `No one is eating our ${food} - it has been removed from the ${type} menu!`;
   } else {
-    return `Sorry, we don't sell ${food}, try adding a new recipe!`
+    return `Sorry, we don't sell ${food}, try adding a new recipe!`;
   }
 }
 
