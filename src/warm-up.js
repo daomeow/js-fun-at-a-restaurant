@@ -11,7 +11,7 @@
 
 var food = "Ice Cream";
 var type = "Dessert";
-var inStock = 10
+var inStock = 10;
 
 
 
@@ -54,9 +54,9 @@ if (inStock < 20) {
 var stockCount;
 
 if (stockCount >= 1) {
-  return `I'm going to eat some ${food}!`
+  return `I'm going to eat some ${food}!`;
 } else {
-  return `We need to get some more ${food}.`
+  return `We need to get some more ${food}.`;
 }
 
 // Express the following in code: If the variable "isFavorite" is true,
@@ -65,9 +65,9 @@ if (stockCount >= 1) {
 // the "food" variable should be included in the logged statement.
 
 if (isFavorite) {
-  return `My favorite food is ${food}!`
+  return `My favorite food is ${food}!`;
 } else {
-  return `I recently ate ${food}.`
+  return `I recently ate ${food}.`;
 }
 
 //------------------------- Arrays -------------------------//
@@ -76,7 +76,7 @@ if (isFavorite) {
 // Create a new variable "vegetables" and assign it to an Array of 5 different
 // vegetables, represented by their names as Strings.
 
-var vegetables = ['peppers', 'spinach', 'peapods', 'corn', 'beets']
+var vegetables = ['peppers', 'spinach', 'peapods', 'corn', 'beets'];
 
 
 // Write the code to access the 3rd element of the Array, using bracket
