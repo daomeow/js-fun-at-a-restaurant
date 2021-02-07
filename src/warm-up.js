@@ -18,12 +18,12 @@ var inStock = 10
 // Reassign (not initialize) your "inStock" variable from above. We got a new shipment! Use a built in math operator to make 
 // the inStock count double what it currently is.
 
-var inStock = inStock * 2; 
+inStock = inStock * 2; 
 
 // Reassign (not initialize) your "inStock" variable from above. You got hungry and needed a snack! 
 // Use a built in math operator to decrement the inStock count by 1.
 
-var inStock = inStock - 1;
+inStock = inStock - 1;
 
 // Initialize a new variable "isFavorite", and assign it to a boolean value indicating
 // if the food you chose is your favorite food or not
@@ -64,7 +64,7 @@ if (stockCount >= 1) {
 // statement 'I recently ate [food]'. In either case, the value stored in
 // the "food" variable should be included in the logged statement.
 
-if (isFavorite === true) {
+if (isFavorite) {
   return `My favorite food is ${food}!`
 } else {
   return `I recently ate ${food}.`
